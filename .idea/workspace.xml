@@ -1,48 +1,275 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="fa904a02-96b0-4f18-8b05-e2d2785adf56" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CodeStyleSettingsInfer">
+    <option name="done" value="true" />
+  </component>
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
-  <component name="GradleLocalSettings">
-    <option name="projectSyncType">
-      <map>
-        <entry key="$USER_HOME$/Desktop/ 面试/Pair面试/1-赵俊平/talk-schedule" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/TWU57/twu57team5" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/TWU65/dojos-solution/dojos/BouncingBall/solution" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/TWU65/dojos-solution/dojos/Football_Game/solution" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/TWU65/dojos-solution/dojos/Mocks_And_Stubs/solution" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/TWU65/dojos-solution/dojos/Refactoring_Techniques/4/solution" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/TWU65/dojos-solution/dojos/TDD_Step_By_Step/solution" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/TWU65/dojos/Biblioteca_Online" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/TWU65/dojos/Mocks_And_Stubs" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/TWU65/dojos/Refactoring_Techniques/2" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/TWU65/dojos/Refactoring_Techniques/4" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/TWU65/dojos/TDD_Step_By_Step" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/TWU65/trainee/twu65team2" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/TWU66/twu66team6" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/ddd-bootcamp" value="PREVIEW" />
-        <entry key="$USER_HOME$/IdeaProjects/gs-spring-boot/initial" value="PREVIEW" />
-      </map>
-    </option>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$">
+      <ProjectState />
+    </projectState>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="y" value="23" />
-    <option name="width" value="1440" />
-    <option name="height" value="877" />
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>`</find>
+      <find>r</find>
+      <find>map</find>
+      <find>match</find>
+      <find>head</find>
+      <find>tail</find>
+      <find>fold</find>
+      <find>Fixture.getDepthPublication</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectCodeStyleSettingsMigration">
+    <option name="version" value="1" />
+  </component>
+  <component name="ProjectId" id="1WeLNZERMcjfXfjEW1r12vbLpfu" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="autoscrollFromSource" value="true" />
+    <option name="autoscrollToSource" value="true" />
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build.sbt" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RunManager" selected="Application.CalculatorClient">
+    <configuration name="CalculatorClient" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="example.CalculatorClient" />
+      <module name="ScalaSeedProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ClassTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="example.ClassTest" />
+      <module name="ScalaSeedProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CurryTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="example.CurryTest" />
+      <module name="ScalaSeedProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="EnumTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="example.EnumTest" />
+      <module name="ScalaSeedProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ListTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="example.ListTest" />
+      <module name="ScalaSeedProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CalculatorClient" />
+        <item itemvalue="Application.ListTest" />
+        <item itemvalue="Application.EnumTest" />
+        <item itemvalue="Application.ClassTest" />
+        <item itemvalue="Application.CurryTest" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
+    <option name="availableProjects">
+      <map>
+        <entry>
+          <key>
+            <ExternalProjectPojo>
+              <option name="name" value="ScalaSeedProject" />
+              <option name="path" value="$PROJECT_DIR$" />
+            </ExternalProjectPojo>
+          </key>
+          <value>
+            <list>
+              <ExternalProjectPojo>
+                <option name="name" value="root [file:/Users/yxwang/PracticeProjects/scala-seed-project/]" />
+                <option name="path" value="$PROJECT_DIR$" />
+              </ExternalProjectPojo>
+              <ExternalProjectPojo>
+                <option name="name" value="ScalaSeedProject-build" />
+                <option name="path" value="$PROJECT_DIR$/project" />
+              </ExternalProjectPojo>
+            </list>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="modificationStamps">
+      <map>
+        <entry key="$PROJECT_DIR$" value="4726272089635" />
+        <entry key="$PROJECT_DIR$/build.sbt" value="1468390272" />
+        <entry key="$PROJECT_DIR$/project/Dependencies.scala" value="3187829316" />
+        <entry key="$PROJECT_DIR$/project/build.properties" value="3280644262" />
+      </map>
+    </option>
     <option name="projectSyncType">
       <map>
         <entry key="$PROJECT_DIR$/../scalaseedproject" value="PREVIEW" />
       </map>
     </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="fa904a02-96b0-4f18-8b05-e2d2785adf56" name="Default Changelist" comment="" />
+      <created>1575437140579</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1575437140579</updated>
+      <workItem from="1575437141818" duration="57260000" />
+      <workItem from="1576638417354" duration="3299000" />
+      <workItem from="1577008627594" duration="41266000" />
+      <workItem from="1578730980092" duration="607000" />
+      <workItem from="1578903500463" duration="608000" />
+      <workItem from="1579505076102" duration="5153000" />
+      <workItem from="1579574733266" duration="613000" />
+      <workItem from="1580708934787" duration="712000" />
+      <workItem from="1581341675381" duration="2000" />
+      <workItem from="1581649983657" duration="778000" />
+      <workItem from="1581907237801" duration="1341000" />
+      <workItem from="1582722408698" duration="34000" />
+      <workItem from="1582722449363" duration="168000" />
+      <workItem from="1582882205508" duration="417000" />
+      <workItem from="1584064295379" duration="540000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="100" y="123" width="1240" height="677" key="DiffContextDialog" timestamp="1584064829497">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="100" y="123" width="1240" height="677" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1584064829497" />
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1584064880748">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584064880748" />
+    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1584064880747">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584064880747" />
+    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1584064880746">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584064880746" />
+    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1584064880748">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584064880748" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1584064408977">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584064408977" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1584064408976">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1584064408976" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1584064408976">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1584064408976" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1584064408976">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1584064408976" />
+    <state x="407" y="179" key="RollbackChangesDialog" timestamp="1584064519502">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="407" y="179" key="RollbackChangesDialog/0.23.1440.877@0.23.1440.877" timestamp="1584064519502" />
+    <state x="221" y="100" key="SettingsEditor" timestamp="1582722490981">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1582722490981" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1582722487749">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1582722487749" />
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>origin</expression-string>
+        <language-id>Scala</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="masterDetails">
     <states>
