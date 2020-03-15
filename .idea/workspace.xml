@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa904a02-96b0-4f18-8b05-e2d2785adf56" name="Default Changelist" comment="" />
+    <list default="true" id="fa904a02-96b0-4f18-8b05-e2d2785adf56" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/scala/example/ByNameTest.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,6 +20,13 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -54,7 +64,20 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
-  <component name="RunManager" selected="Application.CalculatorClient">
+  <component name="RunManager" selected="Application.ByNameTest">
+    <configuration name="ByNameTest" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="example.ByNameTest" />
+      <module name="ScalaSeedProject" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CalculatorClient" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="example.CalculatorClient" />
       <module name="ScalaSeedProject" />
@@ -70,19 +93,6 @@
     </configuration>
     <configuration name="ClassTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="example.ClassTest" />
-      <module name="ScalaSeedProject" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CurryTest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="example.CurryTest" />
       <module name="ScalaSeedProject" />
       <extension name="coverage">
         <pattern>
@@ -122,11 +132,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ByNameTest" />
         <item itemvalue="Application.CalculatorClient" />
         <item itemvalue="Application.ListTest" />
         <item itemvalue="Application.EnumTest" />
         <item itemvalue="Application.ClassTest" />
-        <item itemvalue="Application.CurryTest" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +215,9 @@
       <workItem from="1582722408698" duration="34000" />
       <workItem from="1582722449363" duration="168000" />
       <workItem from="1582882205508" duration="417000" />
-      <workItem from="1584064295379" duration="540000" />
+      <workItem from="1584064295379" duration="3258000" />
+      <workItem from="1584257977773" duration="108000" />
+      <workItem from="1584258241339" duration="4205000" />
     </task>
     <servers />
   </component>
@@ -217,38 +229,38 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="100" y="123" width="1240" height="677" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1584064829497" />
-    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1584064880748">
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom" timestamp="1584262113105">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584064880748" />
-    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1584064880747">
+    <state width="1398" height="211" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584262113105" />
+    <state width="1398" height="211" key="GridCell.Tab.0.center" timestamp="1584262113105">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584064880747" />
-    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1584064880746">
+    <state width="1398" height="211" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584262113105" />
+    <state width="1398" height="211" key="GridCell.Tab.0.left" timestamp="1584262113104">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584064880746" />
-    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1584064880748">
+    <state width="1398" height="211" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584262113104" />
+    <state width="1398" height="211" key="GridCell.Tab.0.right" timestamp="1584262113105">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584064880748" />
-    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1584064408977">
+    <state width="1398" height="211" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584262113105" />
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1584257970597">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584064408977" />
-    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1584064408976">
+    <state width="1398" height="285" key="GridCell.Tab.1.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584257970597" />
+    <state width="1398" height="285" key="GridCell.Tab.1.center" timestamp="1584257970597">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1584064408976" />
-    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1584064408976">
+    <state width="1398" height="285" key="GridCell.Tab.1.center/0.23.1440.877@0.23.1440.877" timestamp="1584257970597" />
+    <state width="1398" height="285" key="GridCell.Tab.1.left" timestamp="1584257970596">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1584064408976" />
-    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1584064408976">
+    <state width="1398" height="285" key="GridCell.Tab.1.left/0.23.1440.877@0.23.1440.877" timestamp="1584257970596" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right" timestamp="1584257970597">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
-    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1584064408976" />
+    <state width="1398" height="285" key="GridCell.Tab.1.right/0.23.1440.877@0.23.1440.877" timestamp="1584257970597" />
     <state x="407" y="179" key="RollbackChangesDialog" timestamp="1584064519502">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -257,6 +269,10 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1582722490981" />
+    <state width="500" height="445" key="SwitcherDM" timestamp="1584257947845">
+      <screen x="0" y="23" width="1440" height="877" />
+    </state>
+    <state width="500" height="445" key="SwitcherDM/0.23.1440.877@0.23.1440.877" timestamp="1584257947845" />
     <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1582722487749">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
