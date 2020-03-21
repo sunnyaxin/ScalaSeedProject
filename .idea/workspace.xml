@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fa904a02-96b0-4f18-8b05-e2d2785adf56" name="Default Changelist" comment="" />
+    <list default="true" id="fa904a02-96b0-4f18-8b05-e2d2785adf56" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/scala/example/CirceTest.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/scala/example/CirceTest.scala" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -214,7 +217,7 @@
       <workItem from="1584064295379" duration="3258000" />
       <workItem from="1584257977773" duration="108000" />
       <workItem from="1584258241339" duration="9171000" />
-      <workItem from="1584326971918" duration="21753000" />
+      <workItem from="1584326971918" duration="22524000" />
     </task>
     <servers />
   </component>
@@ -243,26 +246,26 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="6" y="29" width="1428" height="865" maximized="true" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1584265698866" />
-    <state width="1398" height="238" key="GridCell.Tab.0.bottom" timestamp="1584796357718">
+    <state width="1398" height="317" key="GridCell.Tab.0.bottom" timestamp="1584797500911">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1878" height="151" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.23.1920.1177@-1920.23.1920.1177" timestamp="1584423880459" />
-    <state width="1398" height="238" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584796357718" />
-    <state width="1398" height="238" key="GridCell.Tab.0.center" timestamp="1584796357717">
+    <state width="1398" height="317" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584797500911" />
+    <state width="1398" height="317" key="GridCell.Tab.0.center" timestamp="1584797500910">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1878" height="151" key="GridCell.Tab.0.center/0.23.1440.877/-1920.23.1920.1177@-1920.23.1920.1177" timestamp="1584423880458" />
-    <state width="1398" height="238" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584796357717" />
-    <state width="1398" height="238" key="GridCell.Tab.0.left" timestamp="1584796357717">
+    <state width="1398" height="317" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584797500910" />
+    <state width="1398" height="317" key="GridCell.Tab.0.left" timestamp="1584797500910">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1878" height="151" key="GridCell.Tab.0.left/0.23.1440.877/-1920.23.1920.1177@-1920.23.1920.1177" timestamp="1584423880458" />
-    <state width="1398" height="238" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584796357717" />
-    <state width="1398" height="238" key="GridCell.Tab.0.right" timestamp="1584796357718">
+    <state width="1398" height="317" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584797500910" />
+    <state width="1398" height="317" key="GridCell.Tab.0.right" timestamp="1584797500911">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1878" height="151" key="GridCell.Tab.0.right/0.23.1440.877/-1920.23.1920.1177@-1920.23.1920.1177" timestamp="1584423880459" />
-    <state width="1398" height="238" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584796357718" />
+    <state width="1398" height="317" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584797500911" />
     <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1584257970597">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
@@ -287,16 +290,16 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="221" y="100" key="SettingsEditor/0.23.1440.877@0.23.1440.877" timestamp="1582722490981" />
-    <state width="500" height="445" key="SwitcherDM" timestamp="1584796129370">
+    <state width="500" height="445" key="SwitcherDM" timestamp="1584797542852">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="667" height="598" key="SwitcherDM/0.23.1440.877/-1920.23.1920.1177@-1920.23.1920.1177" timestamp="1584424579747" />
-    <state width="500" height="445" key="SwitcherDM/0.23.1440.877@0.23.1440.877" timestamp="1584796129370" />
-    <state x="-1407" y="278" width="894" height="908" key="search.everywhere.popup" timestamp="1584350999723">
-      <screen x="-1920" y="23" width="1920" height="1177" />
+    <state width="500" height="445" key="SwitcherDM/0.23.1440.877@0.23.1440.877" timestamp="1584797542852" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup" timestamp="1584797537879">
+      <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="-1407" y="278" width="894" height="908" key="search.everywhere.popup/0.23.1440.877/-1920.23.1920.1177@-1920.23.1920.1177" timestamp="1584350999723" />
-    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1582722487749" />
+    <state x="385" y="213" width="670" height="676" key="search.everywhere.popup/0.23.1440.877@0.23.1440.877" timestamp="1584797537879" />
   </component>
   <component name="debuggerHistoryManager">
     <expressions id="evaluateExpression">
