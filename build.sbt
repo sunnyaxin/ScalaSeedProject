@@ -10,6 +10,15 @@ lazy val root = (project in file("."))
     name := "ScalaSeedProject",
     libraryDependencies += scalaTest % Test
   )
+  .settings(libraryDependencies ++= projectDependencies)
+
+val circeVersion = "0.12.3"
+
+lazy val projectDependencies = Seq(
+  "io.circe" %% "circe-core" % circeVersion,
+  "io.circe" %% "circe-generic" % circeVersion,
+  "io.circe" %% "circe-parser" % circeVersion,
+)
 
 // Uncomment the following for publishing to Sonatype.
 // See https://www.scala-sbt.org/1.x/docs/Using-Sonatype.html for more detail.
