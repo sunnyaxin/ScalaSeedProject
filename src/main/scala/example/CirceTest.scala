@@ -1,10 +1,5 @@
 package example
 
-import io.circe._
-import io.circe.generic.auto._
-import io.circe.parser._
-import io.circe.syntax._
-
 object CirceTest {
 
   def main(args: Array[String]): Unit = {
@@ -16,6 +11,10 @@ object CirceTest {
   }
 
   private def testBasicCirceInfo(): Unit = {
+    import io.circe.generic.auto._
+    import io.circe.parser._
+    import io.circe.syntax._
+
     val foo: Foo = Qux(13, Some(14.0))
 
     val json = foo.asJson.noSpaces
@@ -26,6 +25,9 @@ object CirceTest {
   }
 
   def testParseJson(): Unit = {
+    import io.circe._
+    import io.circe.parser._
+
     val rawJson: String = """
         {
           "foo": "bar",
@@ -42,6 +44,9 @@ object CirceTest {
   }
 
   def testTraverseAndModifyJson(): Unit = {
+    import io.circe._
+    import io.circe.parser._
+
     val json: String = """
       {
         "id": "c730433b-082c-4984-9d66-855c243266f0",

@@ -28,18 +28,6 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>`</find>
-      <find>r</find>
-      <find>map</find>
-      <find>match</find>
-      <find>head</find>
-      <find>tail</find>
-      <find>fold</find>
-      <find>Fixture.getDepthPublication</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -217,7 +205,7 @@
       <workItem from="1584064295379" duration="3258000" />
       <workItem from="1584257977773" duration="108000" />
       <workItem from="1584258241339" duration="9171000" />
-      <workItem from="1584326971918" duration="22524000" />
+      <workItem from="1584326971918" duration="24200000" />
     </task>
     <servers />
   </component>
@@ -246,26 +234,26 @@
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state x="6" y="29" width="1428" height="865" maximized="true" key="DiffContextDialog/0.23.1440.877@0.23.1440.877" timestamp="1584265698866" />
-    <state width="1398" height="317" key="GridCell.Tab.0.bottom" timestamp="1584797500911">
+    <state width="1398" height="246" key="GridCell.Tab.0.bottom" timestamp="1584882153496">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1878" height="151" key="GridCell.Tab.0.bottom/0.23.1440.877/-1920.23.1920.1177@-1920.23.1920.1177" timestamp="1584423880459" />
-    <state width="1398" height="317" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584797500911" />
-    <state width="1398" height="317" key="GridCell.Tab.0.center" timestamp="1584797500910">
+    <state width="1398" height="246" key="GridCell.Tab.0.bottom/0.23.1440.877@0.23.1440.877" timestamp="1584882153496" />
+    <state width="1398" height="246" key="GridCell.Tab.0.center" timestamp="1584882153495">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1878" height="151" key="GridCell.Tab.0.center/0.23.1440.877/-1920.23.1920.1177@-1920.23.1920.1177" timestamp="1584423880458" />
-    <state width="1398" height="317" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584797500910" />
-    <state width="1398" height="317" key="GridCell.Tab.0.left" timestamp="1584797500910">
+    <state width="1398" height="246" key="GridCell.Tab.0.center/0.23.1440.877@0.23.1440.877" timestamp="1584882153495" />
+    <state width="1398" height="246" key="GridCell.Tab.0.left" timestamp="1584882153495">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1878" height="151" key="GridCell.Tab.0.left/0.23.1440.877/-1920.23.1920.1177@-1920.23.1920.1177" timestamp="1584423880458" />
-    <state width="1398" height="317" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584797500910" />
-    <state width="1398" height="317" key="GridCell.Tab.0.right" timestamp="1584797500911">
+    <state width="1398" height="246" key="GridCell.Tab.0.left/0.23.1440.877@0.23.1440.877" timestamp="1584882153495" />
+    <state width="1398" height="246" key="GridCell.Tab.0.right" timestamp="1584882153496">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
     <state width="1878" height="151" key="GridCell.Tab.0.right/0.23.1440.877/-1920.23.1920.1177@-1920.23.1920.1177" timestamp="1584423880459" />
-    <state width="1398" height="317" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584797500911" />
+    <state width="1398" height="246" key="GridCell.Tab.0.right/0.23.1440.877@0.23.1440.877" timestamp="1584882153496" />
     <state width="1398" height="285" key="GridCell.Tab.1.bottom" timestamp="1584257970597">
       <screen x="0" y="23" width="1440" height="877" />
     </state>
