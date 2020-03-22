@@ -9,7 +9,9 @@ object CirceTest {
 
 //    testTraverseAndModifyJson()
 
-    testEncodingAndDecoding()
+//    testEncodingAndDecoding()
+
+    testSemiAutoDerivation()
   }
 
   private def testBasicCirceInfo(): Unit = {
@@ -97,6 +99,44 @@ object CirceTest {
 
     val listRes = decode[List[Int]]("[1, 2, 3]")
     println(listRes)
+  }
+
+  def testSemiAutoDerivation(): Unit = {
+    import io.circe._
+    import io.circe.generic.semiauto._
+    import io.circe.syntax._
+
+    case class Foo(a: Int, b: String, c: Boolean)
+
+    implicit val fooDecoder: Decoder[Foo] = deriveDecoder[Foo]
+    implicit val fooEncoder: Encoder[Foo] = deriveEncoder[Foo]
+
+    val fooJson: Json = Foo(1, "hello", c = true).asJson
+    val fooObj: Either[DecodingFailure, Foo] = fooJson.as[Foo]
+    println(fooJson)
+    println(fooObj)
+
+    //need Macro Paradise plugin to use @JsonCodec
+//    @JsonCodec case class Bar(i: Int, s: String)
+//    val bar = Bar(13, "Qux").asJson
+//    println(bar)
+
+    import io.circe.{Decoder, Encoder}
+
+    case class User(id: Long, firstName: String, lastName: String)
+
+    implicit val decodeUser: Decoder[User] =
+      Decoder.forProduct3("id", "first_name", "last_name")(User.apply)
+
+    implicit val encodeUser: Encoder[User] =
+      Encoder.forProduct3("id", "first_name", "last_name")(
+        u => (u.id, u.firstName, u.lastName)
+      )
+
+    val userJson: Json = User(1L, "Yaxin", "Sunny").asJson
+    val userObj: Either[DecodingFailure, User] = userJson.as[User]
+    println(userJson)
+    println(userObj)
   }
 }
 
