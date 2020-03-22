@@ -1,5 +1,7 @@
 package example
 
+import io.circe.{DecodingFailure, Json}
+
 object CirceTest {
 
   def main(args: Array[String]): Unit = {
@@ -11,7 +13,11 @@ object CirceTest {
 
 //    testEncodingAndDecoding()
 
-    testSemiAutoDerivation()
+    testSemiAutoDerivationWithDefaultName()
+
+    testSemiAutoDerivationWithDifferentName()
+
+//    testAutoDerivation()
   }
 
   private def testBasicCirceInfo(): Unit = {
@@ -101,7 +107,7 @@ object CirceTest {
     println(listRes)
   }
 
-  def testSemiAutoDerivation(): Unit = {
+  def testSemiAutoDerivationWithDefaultName(): Unit = {
     import io.circe._
     import io.circe.generic.semiauto._
     import io.circe.syntax._
@@ -115,12 +121,10 @@ object CirceTest {
     val fooObj: Either[DecodingFailure, Foo] = fooJson.as[Foo]
     println(fooJson)
     println(fooObj)
+  }
 
-    //need Macro Paradise plugin to use @JsonCodec
-//    @JsonCodec case class Bar(i: Int, s: String)
-//    val bar = Bar(13, "Qux").asJson
-//    println(bar)
-
+  def testSemiAutoDerivationWithDifferentName(): Unit = {
+    import io.circe.syntax._
     import io.circe.{Decoder, Encoder}
 
     case class User(id: Long, firstName: String, lastName: String)
@@ -137,6 +141,19 @@ object CirceTest {
     val userObj: Either[DecodingFailure, User] = userJson.as[User]
     println(userJson)
     println(userObj)
+  }
+
+  def testAutoDerivation(): Unit = {
+    import io.circe.generic.auto._
+    import io.circe.syntax._
+
+    case class Person(name: String)
+    case class Greeting(salutation: String,
+                        person: Person,
+                        exclamationMarks: Int)
+
+    val greetingJson = Greeting("Hey", Person("Chris"), 3).asJson //todo compare with semi
+    println(greetingJson)
   }
 }
 
