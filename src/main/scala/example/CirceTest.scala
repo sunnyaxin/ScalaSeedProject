@@ -7,7 +7,9 @@ object CirceTest {
 
 //    testParseJson()
 
-    testTraverseAndModifyJson()
+//    testTraverseAndModifyJson()
+
+    testEncodingAndDecoding()
   }
 
   private def testBasicCirceInfo(): Unit = {
@@ -79,6 +81,22 @@ object CirceTest {
 //    Cursor provides functionality for moving around a tree and making modifications
 //    HCursor tracks the history of operations performed. This can be used to provide useful error messages when something goes wrong.
 //    ACursor also tracks history, but represents the possibility of failure (e.g. calling downField on a field that doesn’t exist)
+  }
+
+  def testEncodingAndDecoding(): Unit = {
+    import io.circe.parser.decode
+    import io.circe.syntax._
+    import io.circe.{DecodingFailure, Json}
+
+    val intsJson: Json = List(1, 2, 3).asJson
+    println(intsJson)
+
+    val listInstances: Either[DecodingFailure, List[Int]] =
+      intsJson.as[List[Int]]
+    println(listInstances)
+
+    val listRes = decode[List[Int]]("[1, 2, 3]")
+    println(listRes)
   }
 }
 
