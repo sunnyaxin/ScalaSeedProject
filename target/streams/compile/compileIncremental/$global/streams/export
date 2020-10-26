@@ -1,1 +1,0 @@
-scalac -classpath /Users/yxwang/PracticeProjects/scala-seed-project/target/scala-2.12/classes -bootclasspath /Users/yxwang/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.12.8.jar /Users/yxwang/PracticeProjects/scala-seed-project/src/main/scala/example/ByNameTest.scala /Users/yxwang/PracticeProjects/scala-seed-project/src/main/scala/example/CirceTest.scala
