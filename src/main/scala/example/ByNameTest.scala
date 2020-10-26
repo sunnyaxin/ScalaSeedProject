@@ -1,5 +1,7 @@
 package example
 
+import scala.collection.mutable
+
 object ByNameTest {
 
   def main(args: Array[String]): Unit = {
@@ -11,10 +13,19 @@ object ByNameTest {
 
   def sum(arg: Int*): Unit = println(arg)
 
+  val xx: Seq[Int] => Unit = sum
+
   def testSumVarargs(): Unit = {
+    val yy = Seq(1, 2, 3)
+    val zz: Seq[Int] = Seq(1,2)
+    sum(yy: _*)
+    sum(zz: _*)
+    xx(zz)
+    sum(mutable.ArrayBuffer(1, 2): _*)
     sum(1)
     sum(1, 2)
     val x = List(1, 2, 3)
+    xx(x)
     sum(x: _*)
   }
 

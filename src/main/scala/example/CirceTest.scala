@@ -152,7 +152,7 @@ object CirceTest {
                         person: Person,
                         exclamationMarks: Int)
 
-    val greetingJson = Greeting("Hey", Person("Chris"), 3).asJson //todo compare with semi
+    val greetingJson = Greeting("Hey", Person("Chris"), 3).asJson
     println(greetingJson)
   }
 }

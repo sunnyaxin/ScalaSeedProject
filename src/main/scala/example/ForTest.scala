@@ -20,16 +20,19 @@ object ForTest {
     }
 
   def richForLoop(origin: List[Int]): List[Int] =
-    for {x <- origin} yield x + 1
+    for { x <- origin } yield x + 1
 
   def mapReplaceFor(origin: List[Int]): List[Int] =
     origin.map(x => x + 1)
 
   def richForLoop2(origin: List[Int]): List[Int] =
-    for {x <- origin
-         y <- origin
+    for {
+      x <- origin
+      y <- origin
     } yield x + y
 
   def mapReplaceFor2(origin: List[Int]): List[Int] =
-    origin.flatMap(x => origin.map(y => x + y))
+    origin.flatMap { x =>
+      origin.map(y => x + y)
+    }
 }
