@@ -8,14 +8,8 @@
 .lib/
 dist/*
 target/
-lib_managed/
-src_managed/
 project/boot/
 project/plugins/project/
-project
-
-# Program temporary
-tmp
 
 # Scala-IDE specific
 .scala_dependencies
