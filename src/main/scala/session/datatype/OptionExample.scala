@@ -1,4 +1,4 @@
-package session
+package session.datatype
 
 object OptionExample {
   def main(args: Array[String]): Unit = {

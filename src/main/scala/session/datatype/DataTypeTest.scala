@@ -1,4 +1,4 @@
-package session
+package session.datatype
 
 import scala.util.{Failure, Success, Try}
 
