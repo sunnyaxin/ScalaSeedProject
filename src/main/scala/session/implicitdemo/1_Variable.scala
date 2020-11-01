@@ -7,7 +7,9 @@ object Demo1 {
 
     f(1)(2)
     f(1)
+    f2(1)
   }
 
   def f(a: Int)(implicit b: Int): Unit = println(s"a is $a, b is $b")  //4_function_parameter
+  def f2(a: Int)(b: Int = 0): Unit = println(s"a is $a, b is $b")  //4_function_parameter
 }
