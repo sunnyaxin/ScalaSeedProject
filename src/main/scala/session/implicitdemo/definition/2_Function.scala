@@ -1,4 +1,4 @@
-package session.implicitdemo
+package session.implicitdemo.definition
 
 object Demo2 {
   def main(args: Array[String]): Unit = {

@@ -1,4 +1,4 @@
-package session.implicitdemo
+package session.implicitdemo.definition
 
 object Demo6 {
   //def sort[A:Ordering](l:List[A])

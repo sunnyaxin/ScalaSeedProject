@@ -1,4 +1,4 @@
-package session.implicitdemo
+package session.implicitdemo.definition
 
 object Demo5 {
   //class Ages(ages:List[Int])(implicit order:Ordering[Int])
