@@ -17,3 +17,9 @@ object Demo2 {
 }
 
 case class Age(v: Int)
+
+//object Age {
+//  implicit val myOrdering:Ordering[Age] = new Ordering[Age] {
+//    override def compare(x: Age, y: Age): Int = 1
+//  }
+//}
