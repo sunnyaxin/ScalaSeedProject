@@ -1,4 +1,4 @@
-package example
+package example.basic
 
 object CollectTest {
   def main(args: Array[String]): Unit = {

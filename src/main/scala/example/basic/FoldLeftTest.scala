@@ -1,4 +1,4 @@
-package example
+package example.basic
 
 object FoldLeftTest extends App {
   override def main(args: Array[String]): Unit = {
