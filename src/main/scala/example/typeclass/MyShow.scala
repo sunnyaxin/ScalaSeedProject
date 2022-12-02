@@ -1,16 +1,11 @@
 package example.typeclass
 
-trait MyShow[A] {
-  def show(a: A): String
-}
-
 object MyShow {
-  trait Ops {
-    def show: String
+  trait MyShowSyntax[A] {
+    def show(a: A): String
   }
 
-  implicit def toOps[A](a: A)(implicit s: MyShow[A]): Ops =
-    new Ops {
-      override def show: String = s.show(a)
-    }
+  implicit class MyShowOps[A](a: A)(implicit s: MyShowSyntax[A]) {
+    def show: String = s.show(a)
+  }
 }

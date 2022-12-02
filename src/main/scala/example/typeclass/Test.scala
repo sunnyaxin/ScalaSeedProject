@@ -17,7 +17,7 @@ object Test extends IOApp {
 }
 
 object PersonInstance {
-  implicit val show : MyShow[Person] = new MyShow[Person] {
+  implicit val show : MyShowSyntax[Person] = new MyShowSyntax[Person] {
     override def show(p: Person): String = s"Name: ${p.name}, Age: ${p.age}"
   }
 }
