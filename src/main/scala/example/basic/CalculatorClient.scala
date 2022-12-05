@@ -1,4 +1,4 @@
-package example
+package example.basic
 
 import scala.math._
 

@@ -1,5 +1,4 @@
-package example
-
+package example.basic
 
 object IOTest {
 
