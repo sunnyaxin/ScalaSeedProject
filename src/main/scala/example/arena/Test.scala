@@ -1,16 +1,21 @@
 package example.arena
 
 import cats.effect.{ExitCode, IO, IOApp}
+import example.arena.FireForget._
+import example.arena.Test.IOInstance.fork
 
 import java.time.Instant
+import java.util.concurrent.Executors
+import scala.concurrent.ExecutionContext
 import scala.concurrent.duration.DurationInt
+import scala.language.postfixOps
 
-object Test extends IOApp{
+object Test extends IOApp {
   object Definition {
     def printThread: IO[Unit] =
       for {
         _ <- IO(println(Instant.now()))
-        _ <- IO.sleep(5 seconds)
+        _ <- IO.sleep(3 seconds)
         thread <- IO(Thread.currentThread().getName)
         _ <- IO(println(s"current thread is $thread"))
         _ <- IO(println(Instant.now()))
@@ -25,9 +30,20 @@ object Test extends IOApp{
     def operation: IO[Unit] = Definition.printThread.fork
   } //  单独的fork IO 2
 
-  override def run(args: List[String]): IO[ExitCode] = for {
-    _ <- Scope1.operation
-    _ <- Scope2.operation
-    _ <- Definition.printThread
-  } yield ExitCode.Success
+  override def run(args: List[String]): IO[ExitCode] =
+    for {
+      _ <- Scope1.operation
+      _ <- Scope2.operation
+      _ <- Definition.printThread
+    } yield ExitCode.Success
+
+  object IOInstance {
+    val ec = ExecutionContext.fromExecutor(Executors.newFixedThreadPool(2))
+
+    implicit val fork: FireForgetSyntax[IO, Unit] = f =>
+      for {
+        fiber <- f.startOn(ec)
+//        _ <- fiber.join
+      } yield ()
+  }
 }

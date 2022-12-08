@@ -18,7 +18,7 @@ lazy val projectDependencies = Seq(
   "io.circe" %% "circe-core" % circeVersion,
   "io.circe" %% "circe-generic" % circeVersion,
   "io.circe" %% "circe-parser" % circeVersion,
-  "org.typelevel" %% "cats-effect" % "2.5.3"
+  "org.typelevel" %% "cats-effect" % "3.4.2"
 )
 
 // Uncomment the following for publishing to Sonatype.
