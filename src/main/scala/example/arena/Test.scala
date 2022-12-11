@@ -34,16 +34,16 @@ object Test extends IOApp {
     for {
       _ <- Scope1.operation
       _ <- Scope2.operation
+      _ <- Scope2.operation
       _ <- Definition.printThread
     } yield ExitCode.Success
 
   object IOInstance {
-    val ec = ExecutionContext.fromExecutor(Executors.newFixedThreadPool(2))
+    val ec = ExecutionContext.fromExecutor(Executors.newCachedThreadPool)
 
     implicit val fork: FireForgetSyntax[IO, Unit] = f =>
       for {
-        fiber <- f.startOn(ec)
-//        _ <- fiber.join
+        _ <- f.startOn(ec)
       } yield ()
   }
 }
