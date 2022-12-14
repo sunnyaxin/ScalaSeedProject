@@ -41,7 +41,7 @@ object Test extends IOApp {
   object IOInstance {
     val ec = ExecutionContext.fromExecutor(Executors.newCachedThreadPool)
 
-    implicit val fork: FireForgetSyntax[IO, Unit] = f =>
+    implicit def fork[T]: FireForgetSyntax[IO, T] = f =>
       for {
         _ <- f.startOn(ec)
       } yield ()
