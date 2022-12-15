@@ -1,5 +1,7 @@
 package example.arena
 
+import cats.effect.implicits.asyncOps
+import cats.effect.kernel.Async
 import cats.effect.{ExitCode, IO, IOApp}
 import example.arena.FireForget._
 import example.arena.Test.IOInstance.fork
@@ -8,7 +10,8 @@ import java.time.Instant
 import java.util.concurrent.Executors
 import scala.concurrent.ExecutionContext
 import scala.concurrent.duration.DurationInt
-import scala.language.postfixOps
+import scala.language.{higherKinds, postfixOps}
+import cats.implicits._
 
 object Test extends IOApp {
   object Definition {
@@ -41,9 +44,8 @@ object Test extends IOApp {
   object IOInstance {
     val ec = ExecutionContext.fromExecutor(Executors.newCachedThreadPool)
 
-    implicit def fork[T]: FireForgetSyntax[IO, T] = f =>
-      for {
-        _ <- f.startOn(ec)
-      } yield ()
+    implicit def fork[T, F[_]: Async]: FireForgetSyntax[F, T] = (f: F[T]) => for {
+      _ <- f.startOn(ec)
+    } yield ()
   }
 }
