@@ -2,6 +2,8 @@ package problems
 
 import cats.effect.{ExitCode, IO, IOApp}
 
+import scala.annotation.tailrec
+
 class ListNode(_x: Int = 0, _next: ListNode = null) {
   var next: ListNode = _next
   var x: Int = _x
@@ -33,13 +35,13 @@ object MergeTwoSortedLists extends IOApp {
 
   object Solution {
 
-//    @tailrec
+    @tailrec
     def merge(list1: ListNode, list2: ListNode, temp: ListNode): ListNode = {
       if (list1 == null) { temp.next = list2; return temp }
       if (list2 == null) { temp.next = list1; return temp }
       if (list1.x < list2.x) {
-        temp.next = list1; return merge(list1.next, list2, list1)
-      } else temp.next = list2; merge(list1, list2.next, list2)
+        temp.next = list1; merge(list1.next, list2, list1)
+      } else { temp.next = list2; merge(list1, list2.next, list2) }
     }
 
     def mergeTwoLists(list1: ListNode, list2: ListNode): ListNode = {
