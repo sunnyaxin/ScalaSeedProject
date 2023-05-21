@@ -2,10 +2,10 @@ package problems
 
 import scala.collection.mutable.ArrayBuffer
 
-object RemoveDuplicates {
+object RemoveDuplicatesArray {
   def main(args: Array[String]): Unit = {
-    println(Solution.removeDuplicates(Array(1, 1, 2)))
-    println(Solution.removeDuplicates(Array(0, 0, 1, 1, 1, 2, 2, 3, 3, 4)))
+    println(Solution.removeDuplicates(Array(1, 1, 2))) //2
+    println(Solution.removeDuplicates(Array(0, 0, 1, 1, 1, 2, 2, 3, 3, 4))) //5
   }
 
   object Solution {
