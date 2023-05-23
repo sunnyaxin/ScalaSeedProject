@@ -1,5 +1,7 @@
 package problems
 
+import problems.common.ListNode
+
 object RemoveDuplicatesList {
   def main(args: Array[String]): Unit = {
     println(
@@ -17,11 +19,6 @@ object RemoveDuplicatesList {
         )
       )
     ) // [1, 2, 3]
-  }
-
-  class ListNode(_x: Int = 0, _next: ListNode = null) {
-    var next: ListNode = _next
-    var x: Int = _x
   }
 
   object Solution {

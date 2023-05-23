@@ -1,5 +1,7 @@
 package problems
 
+import problems.common.TreeNode
+
 object InorderTraversal {
   def main(args: Array[String]): Unit = {
     println(
@@ -13,16 +15,6 @@ object InorderTraversal {
     ) //[1,3,2]
     println(Solution.inorderTraversal(null)) //[]
     println(Solution.inorderTraversal(new TreeNode(1))) //[1]
-  }
-
-  class TreeNode(
-      _value: Int = 0,
-      _left: TreeNode = null,
-      _right: TreeNode = null
-  ) {
-    var value: Int = _value
-    var left: TreeNode = _left
-    var right: TreeNode = _right
   }
 
   object Solution {
