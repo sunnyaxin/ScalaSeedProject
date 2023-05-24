@@ -6,26 +6,26 @@ object SameTree {
   def main(args: Array[String]): Unit = {
     println(
       Solution.isSameTree(
-        new TreeNode(1, new TreeNode(2), new TreeNode(3)),
-        new TreeNode(1, new TreeNode(2), new TreeNode(3))
+        TreeNode(1, TreeNode(2), TreeNode(3)),
+        TreeNode(1, TreeNode(2), TreeNode(3))
       )
     ) //true
     println(
       Solution.isSameTree(
-        new TreeNode(1, new TreeNode(2)),
-        new TreeNode(1, null, new TreeNode(2))
+        TreeNode(1, TreeNode(2)),
+        TreeNode(1, null, TreeNode(2))
       )
     ) //false
     println(
       Solution.isSameTree(
-        new TreeNode(1, new TreeNode(2), new TreeNode(1)),
-        new TreeNode(1, new TreeNode(1), new TreeNode(2))
+        TreeNode(1, TreeNode(2), TreeNode(1)),
+        TreeNode(1, TreeNode(1), TreeNode(2))
       )
     ) //false
     println(
       Solution.isSameTree(
-        new TreeNode(1, new TreeNode(1)),
-        new TreeNode(1, null, new TreeNode(1))
+        TreeNode(1, TreeNode(1)),
+        TreeNode(1, null, TreeNode(1))
       )
     ) //false
   }

@@ -12,8 +12,8 @@ object MergeTwoSortedLists extends IOApp {
       _ <- IO(
         println(
           Solution.mergeTwoLists(
-            new ListNode(1, new ListNode(2, new ListNode(4))),
-            new ListNode(1, new ListNode(3, new ListNode(4)))
+            ListNode(1, ListNode(2, ListNode(4))),
+            ListNode(1, ListNode(3, ListNode(4)))
           )
         )
       )
@@ -24,7 +24,7 @@ object MergeTwoSortedLists extends IOApp {
       )
       _ <- IO(
         println(
-          Solution.mergeTwoLists(new ListNode(0), null)
+          Solution.mergeTwoLists(ListNode(0), null)
         )
       )
     } yield ExitCode.Success
@@ -41,7 +41,7 @@ object MergeTwoSortedLists extends IOApp {
     }
 
     def mergeTwoLists(list1: ListNode, list2: ListNode): ListNode = {
-      val init = new ListNode()
+      val init = ListNode()
       merge(list1, list2, init)
       init.next
     }

@@ -7,15 +7,15 @@ object RemoveDuplicatesList {
     println(
       Solution
         .deleteDuplicates(
-          new ListNode(1, new ListNode(1, new ListNode(2)))
+          ListNode(1, ListNode(1, ListNode(2)))
         )
         .toString
     ) // [1, 2]
     println(
       Solution.deleteDuplicates(
-        new ListNode(
+        ListNode(
           1,
-          new ListNode(1, new ListNode(2, new ListNode(3, new ListNode(3))))
+          ListNode(1, ListNode(2, ListNode(3, ListNode(3))))
         )
       )
     ) // [1, 2, 3]

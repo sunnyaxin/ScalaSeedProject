@@ -6,28 +6,28 @@ object SymmetricTree {
   def main(args: Array[String]): Unit = {
     println(
       Solution.isSymmetric(
-        new TreeNode(
+        TreeNode(
           1,
-          new TreeNode(2, new TreeNode(3), new TreeNode(4)),
-          new TreeNode(2, new TreeNode(4), new TreeNode(3))
+          TreeNode(2, TreeNode(3), TreeNode(4)),
+          TreeNode(2, TreeNode(4), TreeNode(3))
         )
       )
     ) // true
     println(
       Solution.isSymmetric(
-        new TreeNode(
+        TreeNode(
           1,
-          new TreeNode(2, null, new TreeNode(3)),
-          new TreeNode(2, null, new TreeNode(3))
+          TreeNode(2, null, TreeNode(3)),
+          TreeNode(2, null, TreeNode(3))
         )
       )
     ) // false
     println(
       Solution.isSymmetric(
-        new TreeNode(
+        TreeNode(
           1,
-          new TreeNode(2, new TreeNode(2)),
-          new TreeNode(2, new TreeNode(2))
+          TreeNode(2, TreeNode(2)),
+          TreeNode(2, TreeNode(2))
         )
       )
     ) //false
