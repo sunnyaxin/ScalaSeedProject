@@ -1,6 +1,4 @@
-package problems
-
-import problems.common.ListNode
+package problems.LinkedList
 
 object RemoveDuplicatesList {
   def main(args: Array[String]): Unit = {

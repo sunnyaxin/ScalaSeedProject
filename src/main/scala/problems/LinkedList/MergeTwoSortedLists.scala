@@ -1,7 +1,6 @@
-package problems
+package problems.LinkedList
 
 import cats.effect.{ExitCode, IO, IOApp}
-import problems.common.ListNode
 
 import scala.annotation.tailrec
 

@@ -1,6 +1,4 @@
-package problems
-
-import problems.common.TreeNode
+package problems.Tree
 
 import scala.collection.mutable
 

@@ -1,6 +1,4 @@
-package problems
-
-import problems.common.TreeNode
+package problems.Tree
 
 object SymmetricTree {
   def main(args: Array[String]): Unit = {

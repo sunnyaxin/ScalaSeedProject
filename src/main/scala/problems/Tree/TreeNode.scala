@@ -1,4 +1,4 @@
-package problems.common
+package problems.Tree
 
 case class TreeNode(
     value: Int = 0,
