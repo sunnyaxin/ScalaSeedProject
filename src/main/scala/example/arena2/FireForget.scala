@@ -1,4 +1,4 @@
-package example.arena
+package example.arena2
 
 import scala.language.higherKinds
 

@@ -1,7 +1,7 @@
-package example.arena
+package example.arena2
 
 import cats.effect.{ExitCode, IO, IOApp}
-import example.arena.Test.Definition
+import example.arena2.Test.Definition
 
 import java.util.concurrent.Executors
 import scala.concurrent.ExecutionContext

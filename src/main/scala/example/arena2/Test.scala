@@ -1,10 +1,10 @@
-package example.arena
+package example.arena2
 
 import cats.effect.implicits.asyncOps
 import cats.effect.kernel.Async
 import cats.effect.{ExitCode, IO, IOApp}
-import example.arena.FireForget._
-import example.arena.Test.IOInstance.fork
+import example.arena2.FireForget._
+import example.arena2.Test.IOInstance.fork
 
 import java.time.Instant
 import java.util.concurrent.Executors
