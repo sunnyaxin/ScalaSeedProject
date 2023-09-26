@@ -33,13 +33,7 @@ case class OrderedEffect[A, B](eff: Printer[A], f: A => Printer[B]) extends Prin
 object Printer {
   def map[A, B](p: Printer[A])(f: A => B): Printer[B] = flatMap(p)((a: A) => Pure(f(a)))
 
-  def flatMap[A, B](p: Printer[A])(f: A => Printer[B]): Printer[B] =
-    p match {
-      case Reader() => OrderedEffect(Reader(), (a: A) => f(a))
-      case Writer(content) => OrderedEffect(Writer(content), (a: A) => f(a))
-      case Pure(a) => f(a)
-      case OrderedEffect(eff, g) => OrderedEffect(eff, (a: Any) => flatMap(g(a))(f)) //OrderedEffect(p, f)
-    }
+  def flatMap[A, B](p: Printer[A])(f: A => Printer[B]): Printer[B] = OrderedEffect(p, f)
 
   def run[A](p: Printer[A]): A =
     p match {
