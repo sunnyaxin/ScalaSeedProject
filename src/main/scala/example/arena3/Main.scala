@@ -21,6 +21,7 @@ object Main extends App {
 
   println("=============")
   program.loopWhile(_.nonEmpty).run
+//  write("aaa").loopWhile(_ => true).run
   // 进行上述行为的循环直到输入空值
 }
 
@@ -43,8 +44,11 @@ object Printer {
       case OrderedEffect(eff, f) => run(f(run(eff)))
     }
 
-  def loopWhile[A](p: Printer[A])(f: A => Boolean): Printer[A] =
-    OrderedEffect(p, (a: A) => if (f(a)) loopWhile(flatMap(p)(a => Pure(a)))(f) else Pure(a))
+  def loopWhile[A](p: Printer[A])(f: A => Boolean): Printer[A] = {
+//    OrderedEffect(p, (a: A) => if (f(a)) loopWhile(p)(f) else Pure(a))
+//    flatMap(p)((a: A) => if (f(a)) loopWhile(p)(f) else Pure(a))
+    p.flatMap((a: A) => if (f(a)) loopWhile(p)(f) else Pure(a))
+  }
 
   implicit class PrinterOps[A, B](p: Printer[A]) {
     def map(f: A => B): Printer[B] = Printer.map(p)(f)
