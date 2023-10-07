@@ -1,9 +1,12 @@
 package example.arena3
 
+import scala.annotation.tailrec
+import scala.io.StdIn.readLine
+
 object Main extends App {
 
   def write(content: String): Printer[Unit] = Writer(content)
-  def read: Printer[String] = Reader()
+  def read: Printer[String] = Reader
 
   val program = for {
     _ <- write("Input:")
@@ -26,7 +29,7 @@ object Main extends App {
 }
 
 sealed trait Printer[A]
-case class Reader() extends Printer[String]
+case object Reader extends Printer[String]
 case class Writer(content: String) extends Printer[Unit]
 case class Pure[A](v: A) extends Printer[A]
 case class OrderedEffect[A, B](eff: Printer[A], f: A => Printer[B]) extends Printer[B]
@@ -36,12 +39,18 @@ object Printer {
 
   def flatMap[A, B](p: Printer[A])(f: A => Printer[B]): Printer[B] = OrderedEffect(p, f)
 
+  @tailrec
   def run[A](p: Printer[A]): A =
     p match {
-      case Reader() => scala.io.StdIn.readLine()
+      case Reader => readLine()
       case Writer(content) => println(content)
       case Pure(a) => a
-      case OrderedEffect(eff, f) => run(f(run(eff)))
+      case OrderedEffect(eff, f) => eff match {
+        case Reader => f(readLine()).run
+        case Writer(content) => f(println(content)).run
+        case Pure(v) => f(v).run
+        case OrderedEffect(eff1, f1) => eff1.flatMap(a => f1(a).flatMap(f)).run
+      }
     }
 
   def loopWhile[A](p: Printer[A])(f: A => Boolean): Printer[A] = {
