@@ -1,4 +1,4 @@
-package example.arena3
+package example.arena3.phase1
 
 import scala.io.StdIn.readLine
 
