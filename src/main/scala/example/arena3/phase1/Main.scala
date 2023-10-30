@@ -4,8 +4,8 @@ import scala.io.StdIn.readLine
 
 object Main extends App {
 
-  def write(content: String): Printer[Unit] = Writer(content)
-  def read: Printer[String] = Reader
+  def write(content: String): ConsoleEffect[Unit] = Write(content)
+  def read: ConsoleEffect[String] = Read
 
   val program = for {
     _ <- write("Input:")
@@ -27,42 +27,42 @@ object Main extends App {
   // 进行上述行为的循环直到输入空值
 }
 
-sealed trait Printer[+A]
-case object Reader extends Printer[String]
-case class Writer(content: String) extends Printer[Unit]
-case class Pure[A](v: A) extends Printer[A]
-case class OrderedEffect[A, B](eff: Printer[A], f: A => Printer[B]) extends Printer[B]
+sealed trait ConsoleEffect[+A]
+case object Read extends ConsoleEffect[String]
+case class Write(content: String) extends ConsoleEffect[Unit]
+case class NoEffect[A](v: A) extends ConsoleEffect[A]
+case class ChainEffect[A, B](eff: ConsoleEffect[A], f: A => ConsoleEffect[B]) extends ConsoleEffect[B]
 
-object Printer {
-  def map[A, B](p: Printer[A])(f: A => B): Printer[B] = flatMap(p)((a: A) => Pure(f(a)))
+object ConsoleEffect {
+  def map[A, B](p: ConsoleEffect[A])(f: A => B): ConsoleEffect[B] = flatMap(p)((a: A) => NoEffect(f(a)))
 
-  def flatMap[A, B](p: Printer[A])(f: A => Printer[B]): Printer[B] = OrderedEffect(p, f)
+  def flatMap[A, B](p: ConsoleEffect[A])(f: A => ConsoleEffect[B]): ConsoleEffect[B] = ChainEffect(p, f)
 
-  def run[A](p: Printer[A]): A =
+  def run[A](p: ConsoleEffect[A]): A =
     p match {
-      case Reader          => readLine()
-      case Writer(content) => println(content)
-      case Pure(a)         => a
-      case OrderedEffect(eff, f) =>
+      case Read          => readLine()
+      case Write(content) => println(content)
+      case NoEffect(a)         => a
+      case ChainEffect(eff, f) =>
         eff match {
-          case Reader          => f(readLine()).run
-          case Writer(content) => f(println(content)).run
-          case Pure(v)         => f(v).run
-          case OrderedEffect(eff1, f1) =>
+          case Read          => f(readLine()).run
+          case Write(content) => f(println(content)).run
+          case NoEffect(v)         => f(v).run
+          case ChainEffect(eff1, f1) =>
             eff1.flatMap(a => f1(a).flatMap(f)).run
         }
     }
 
-  def loopWhile[A](p: Printer[A])(f: A => Boolean): Printer[A] = {
+  def loopWhile[A](p: ConsoleEffect[A])(f: A => Boolean): ConsoleEffect[A] = {
 //    OrderedEffect(p, (a: A) => if (f(a)) loopWhile(p)(f) else Pure(a))
 //    flatMap(p)((a: A) => if (f(a)) loopWhile(p)(f) else Pure(a))
-    p.flatMap((a: A) => if (f(a)) loopWhile(p)(f) else Pure(a))
+    p.flatMap((a: A) => if (f(a)) loopWhile(p)(f) else NoEffect(a))
   }
 
-  implicit class PrinterOps[A, B](p: Printer[A]) {
-    def map(f: A => B): Printer[B] = Printer.map(p)(f)
-    def flatMap(f: A => Printer[B]): Printer[B] = Printer.flatMap(p)(f)
-    def run = Printer.run(p)
-    def loopWhile(f: A => Boolean): Printer[A] = Printer.loopWhile(p)(f)
+  implicit class PrinterOps[A, B](p: ConsoleEffect[A]) {
+    def map(f: A => B): ConsoleEffect[B] = ConsoleEffect.map(p)(f)
+    def flatMap(f: A => ConsoleEffect[B]): ConsoleEffect[B] = ConsoleEffect.flatMap(p)(f)
+    def run = ConsoleEffect.run(p)
+    def loopWhile(f: A => Boolean): ConsoleEffect[A] = ConsoleEffect.loopWhile(p)(f)
   }
 }
