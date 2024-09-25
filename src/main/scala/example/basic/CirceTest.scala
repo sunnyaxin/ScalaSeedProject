@@ -1,5 +1,6 @@
 package example.basic
 
+import io.circe.syntax.EncoderOps
 import io.circe.{DecodingFailure, Json}
 
 object CirceTest {
@@ -13,11 +14,18 @@ object CirceTest {
 
 //    testEncodingAndDecoding()
 
-    testSemiAutoDerivationWithDefaultName()
+//    testSemiAutoDerivationWithDefaultName()
+//
+//    testSemiAutoDerivationWithDifferentName()
 
-    testSemiAutoDerivationWithDifferentName()
+    testOptionEncode()
 
 //    testAutoDerivation()
+  }
+
+  private def testOptionEncode(): Unit = {
+    println(Some("abc").asJson) //"abc"
+    println(None.asJson)        //null
   }
 
   private def testBasicCirceInfo(): Unit = {
